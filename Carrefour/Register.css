@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: aqua;
+  background-size: cover;
+}
+.logo {
+  text-align: center;
+}
+.link {
+  text-align: center;
+  word-spacing: 50px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #336a83;
+}
+.form {
+  margin-top: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.form {
+  display: table;
+  padding-bottom: 0;
+}
+
+.form h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.form .input,
+.input1 {
+  position: relative;
+}
+.input {
+  float: left;
+}
+.input1 {
+  float: right;
+}
+
+.form .input input {
+  padding: 15px 0;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.form .input1 input {
+  padding: 15px 0;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.form .input label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.form .input1 label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.form .input input:focus ~ label,
+.form .input input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03a9f4;
+  font-size: 12px;
+}
+.form .input1 input:focus ~ label,
+.form .input1 input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03a9f4;
+  font-size: 12px;
+}
+.form input[type="submit"] {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #03a9f4;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
